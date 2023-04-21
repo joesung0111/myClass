@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin-top: 20px;
+}
+
+
+.col-6{
+    padding: 0 30px;
+}
+
+.pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(../img/car002.avif);
+    background-position: center center;
+    background-size: cover;
+    float: right;
+
+}
+
+.txt{
+    /* background-color: #c9c9c9; */
+    text-align: center;
+}
+
+.timeline{
+    /* background-color: #bdffb6; */
+    position: relative;
+}
+
+.timeline:before{
+    content: "";
+    width: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    background:linear-gradient(#ff0000, #5d00ff);
+    animation: line 3s ease-in-out infinite alternate;
+}
+
+@keyframes line{
+    0%{
+        background:linear-gradient(#ff0000, #5d00ff);
+    }
+    50%{
+        background:linear-gradient(#d92a48, #3c4fc9);
+    }
+    100%{
+        background:linear-gradient(#ff0000, #0f0b15);
+    }
+}
+
+/* .sign{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #9c1cad;
+} */

@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+body{
+    background-color: #f5f4b3;
+    padding: 0px;
+}
+.banner,.footer{
+    background-color: #ffc516;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 10px;
+
+}
+.row{
+    box-sizing: border-box;
+}
+.box1,.box2{
+    height: 100px;
+    border: 1px solid black;
+    background: #daafaf;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    background-image: url(../img/car001.avif);
+    background-size: cover;
+    background-position: center center;
+}
+.box2{
+    background: #28e72e;
+    background-image: url(../img/car002.avif);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.2;
+}
+.box3{
+    height: 100px;
+    border: 2px solid #0a35c2;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+.col-1{
+    border: 1px solid black;
+    height: 100px;
+}

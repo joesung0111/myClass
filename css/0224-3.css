@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+tbody tr:nth-child(2n+1){
+    background-color: #e6e5e5;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    thead{
+        display: none;
+    }
+    tbody tr{
+        display: block;
+        /* background-color: #e42020; */
+    }
+    tbody tr td{
+        display: block;
+        overflow: hidden;
+    }
+    tbody tr td:before{
+        content: attr(data-td);
+        background-color: #b158ae;
+        display: block;
+        float: left;
+        width: 40%;
+        text-align: center;
+        padding: 8px 30px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .col2{
+        display: block;
+        float: left;
+        width: 50%;
+        line-height: 40px;
+        /* background-color: #ede734; */
+    }
+}

@@ -1,0 +1,44 @@
+:root{
+    --color01: #FF0000
+}
+thead{
+    background-color: #630d0d;
+    color: aliceblue;
+}
+tbody tr:nth-child(2n+1){
+    background-color: #ad9c9c;
+}
+
+@media screen and (max-width: 768px) {
+    thead{
+        display: none;
+    }
+    tbody tr{
+        /* background-color: #b59fed; */
+        display: block;
+    }
+    tbody tr td{
+        display: block;
+        overflow:hidden;
+    }
+    tbody tr td:before{
+        content: attr(data-td);
+        background-color: #1a2a84;
+        color: aliceblue;
+        padding: 5px 30px;
+        margin-right: 20px;
+        border-radius: 8px;
+        display: block;
+        background-color: #31b05b;
+        float:left;
+        width: 40%;
+        text-align: center;
+    }
+    .col2{
+        display: block;
+        /* background-color: #c32f2f; */
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+}
